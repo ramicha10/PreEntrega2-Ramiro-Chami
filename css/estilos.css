@@ -12,8 +12,6 @@ body {
 
 .home {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
     "header"
     "carrousel"
@@ -74,26 +72,33 @@ nav ul li a {
 /* Main */
 
 h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Carrousel Home */
 
-.carrousel {
-    grid-area: carrousel;
+.carouselExampleIndicators {
+    
+    width: 80%;
     height: 400px;
+    margin: 5px 10% 20px 0;    
+}
+
+.carousel-item img {
+    height: 650px;
+    width: 80%;
+    /* width: ; */
+}
+
+#carouselExampleIndicators {
+    grid-area: carrousel;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
     margin-top: 5px;
-}
-
-.carrousel div img {
-    width: 25%;
-    height: 362px;
-}
-
-main .carrousel div { 
-    width: 100%;    
-    display: flex;
-    overflow-x: scroll;
 }
 
 /* Shop Index */
