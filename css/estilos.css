@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -21,6 +23,9 @@ body {
     ;
 }
 
+p {
+    font-family: 'Roboto', sans-serif;
+}
 /* Header */
 
 header {
@@ -32,7 +37,7 @@ header {
 
 
 h1 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: xx-large;
     padding-top: 15px;
     padding-left: 15px;
@@ -41,13 +46,15 @@ h1 {
 nav ul li {
     display: inline-block;
     padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 10px px 10px 5px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;}
+    color: black;
+    font-family: 'Roboto', ;
+}
 
 .menu {
     background-color: #b97947;
@@ -91,13 +98,18 @@ main .carrousel div {
 
 /* Shop Index */
 
+.shopind {
+    margin-bottom: 20px;
+}
+
 .shopind h2 {
     margin-left: 70px;
 }
 
 .shopind .caja-contenedor {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(1, 350px);
 }   
 
 .shopind .caja-producto {
@@ -107,19 +119,29 @@ main .carrousel div {
     box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
 }
 
+.redireccion_ind {
+    text-decoration: none;
+    margin-left: 10%;
+
+}
 
 /* Shop */
 
 
 .caja-contenedor {
-    display: flex;   
-    justify-content: space-between;
+    /* display: flex;   
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(1, 350px);
+    column-gap: 25px;
+    justify-content: center;
+    margin-top: 10px;
 }
-
 
 .caja-producto img {
     width: 200px;
-    height: 200px;
+    height: unset;
 }
 
 .shop {
@@ -128,25 +150,28 @@ main .carrousel div {
 }
 
 .shop-fila {
-    margin: 0px 70px 0px 70px;
+    margin: 0px 70px 20px 70px;
 }
 
 .caja-producto p {
-    margin: 2px 20px 0px 20px;
+    margin: 10px 20px 10px 20px;
+
 }
 
 .caja-producto {
     width: 200px;
     height: 350px;
-    margin: 20px 0px;
+    margin-bottom: 20px;
     background-color: white;
     box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
 }
 
+
 .redireccion {
-    text-decoration: underline;
-    color: rgb(71, 71, 241);
+    margin-left: 10%;
+    font-family: 'Roboto', sans-serif;
 }
+
 
 /* Imagenes destacadas */
 
