@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ee9551;
+}
+
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "carrousel"
+    "shopind"
+    "shopind"
+    "footer"
+    ;
+}
+
+/* Header */
+
+header {
+    grid-area: header;
+    background-color: #7e6552;
+    width: 100%;
+    height: 100px;
+}
+
+
+h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px px 10px 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;}
+
+.menu {
+    background-color: #b97947;
+    margin-top: 12px;
+    width: 100%;
+    height: 40px;}
+
+.menu nav ul {
+    height: 30px;
+    text-align: center;
+}
+
+.menu nav ul li {
+    padding: 10px;
+}
+
+/* Main */
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Carrousel Home */
+
+.carrousel {
+    grid-area: carrousel;
+    height: 400px;
+    margin-top: 5px;
+}
+
+.carrousel div img {
+    width: 25%;
+    height: 362px;
+}
+
+main .carrousel div { 
+    width: 100%;    
+    display: flex;
+    overflow-x: scroll;
+}
+
+/* Shop Index */
+
+.shopind h2 {
+    margin-left: 70px;
+}
+
+.shopind .caja-contenedor {
+    display: flex;
+    justify-content: space-around;
+}   
+
+.shopind .caja-producto {
+    width: 200px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
+}
+
+
+/* Shop */
+
+
+.caja-contenedor {
+    display: flex;   
+    justify-content: space-between;
+}
+
+
+.caja-producto img {
+    width: 200px;
+    height: 200px;
+}
+
+.shop {
+    margin: 40px 70px 0px 70px;
+    height: 450px;
+}
+
+.shop-fila {
+    margin: 0px 70px 0px 70px;
+}
+
+.caja-producto p {
+    margin: 2px 20px 0px 20px;
+}
+
+.caja-producto {
+    width: 200px;
+    height: 350px;
+    margin: 20px 0px;
+    background-color: white;
+    box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
+}
+
+.redireccion {
+    text-decoration: underline;
+    color: rgb(71, 71, 241);
+}
+
+/* Imagenes destacadas */
+
+.imagenesDestacadas {
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 1000px;
+    margin-top: 40px;
+}
+
+.imagenesDestacadas div {
+    display: inline-block;
+}
+
+.cuadradoimagen {
+    width: 270px;
+    height: 190px;
+    background-color: rgb(197, 197, 197);
+    margin-top: 10px;
+}
+
+.cuadradoimagen1 {
+    width: 390px;
+    height: 220px;
+    background-color: rgb(197, 197, 197);
+
+}
+
+.cuadradoimagen2 {
+    width: 400px;
+    height: 299px;
+    background-color: rgb(197, 197, 197);
+}
+
+.cuadradoimagen3 {
+    width: 350px;
+    height: 300px;
+    background-color: rgb(197, 197, 197);
+}
+
+/* Blog */
+
+.blog {
+    margin: 40px 70px 0px 70px;
+    height: 1200px;
+}
+
+.cajainformacion {
+    width: 1300px;
+    height: 200px;
+    margin: 30px 0px 0px 190px;
+}
+
+.cajainformacion p {
+    font-size: larger;
+}
+
+.cajainformacion h3 {
+    font-size: 3ch;
+}
+
+
+/* Fotografos */
+
+.fotografos {
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 850px;
+    margin-top: 20px;
+}
+
+.fotografos div {
+    display: flex;
+    margin-top: 10px;
+}
+
+.caja_fotografos {
+    flex-wrap: wrap;
+    margin-left: 100px;
+}
+
+.bloque_blanco {
+    background-color: rgb(124, 95, 72);
+    flex-wrap: wrap;
+    width: 750px;
+    height: 350px;  
+    margin: 5px 5px 5px 5px;
+    padding: 10px 0px 0px 10px;
+}
+
+.bloque_blanco img {
+    width: 200px;
+    height: 190px;
+}
+
+.bloque_blanco p {
+    font-size: larger;
+
+}
+
+/* Footer  */
+
+footer {
+    display: flex;
+    grid-area: footer;
+    background-color: #b97947;
+    width: 100%;
+    height: 100px;
+}
+
+footer div h2 {
+    margin-top: 30px;
+    margin-left: 30px; 
+}
+
+/* footer img{
+    margin-left: 30px;
+    margin-top: 30px;
+} */
+
+/* footer h2 {
+    margin-left: 30px;
+} */
+
+.logos {
+    margin-left: 1170px;
+    margin-top: 30px;
+}
