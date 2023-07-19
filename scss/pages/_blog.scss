@@ -1,0 +1,16 @@
+.blog {
+    margin: 40px 70px 0px 70px;
+    height: 1200px;
+    .cajainformacion {
+        width: 800px;
+        height: 200px;
+        margin: 30px 0px 0px 190px;
+        p {
+            font-size: larger;
+            font-family: $fuente-general;
+        }
+        h3 {
+            font-size: 3ch;
+        }
+    }
+}

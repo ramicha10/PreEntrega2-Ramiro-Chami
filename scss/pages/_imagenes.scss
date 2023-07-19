@@ -1,0 +1,32 @@
+main {
+    .imagenesDestacadas {
+        margin-left: 70px;
+        margin-right: 70px;
+        height: 1000px;
+        margin-top: 40px;
+        div {
+            display: inline-block;
+        }
+        .cuadradoimagen {
+            width: 270px;
+            height: 190px;
+            background-color: rgb(197, 197, 197);
+            margin-top: 10px;
+        }
+        .cuadradoimagen1 {
+            width: 390px;
+            height: 220px;
+            background-color: rgb(197, 197, 197);
+        }
+        .cuadradoimagen2 {
+            width: 400px;
+            height: 299px;
+            background-color: rgb(197, 197, 197);
+        }
+        .cuadradoimagen3 {
+            width: 350px;
+            height: 300px;
+            background-color: rgb(197, 197, 197);
+        }
+    }
+}

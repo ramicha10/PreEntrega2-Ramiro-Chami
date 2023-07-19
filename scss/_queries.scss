@@ -1,0 +1,110 @@
+@media (max-width: 577px) {
+
+    .home {
+        width: auto;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "carrousel"
+        "shopind"
+        "shopind"
+        "footer"
+        ;
+        header{
+            grid-area: header;
+        }
+        main {
+            #carouselExampleIndicators {
+                grid-area: carrousel;
+                width: 100%;
+                height: unset;
+                margin: 0 0 10px 0;
+            }
+            .shopind {
+                grid-area: shopind;
+                height: auto;
+                .caja-contenedor {
+                    display: grid;
+                    grid-template-columns: repeat(1, 400px);
+                    grid-template-rows: repeat(6, 460px);   
+                    justify-content: center;
+                    margin-top: 10px;
+                    row-gap: 15px;
+                    .caja-producto {
+                        width: 400px;
+                        height: 460px;
+                        margin-bottom: 20px;
+                        background-color: white;
+                        box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
+                        text-align: center;
+                        img {
+                            width: 400px;
+                        }
+                        p {
+                            font-size: large;
+                            font-family: $fuente-general;
+                        }
+                        .redireccion_ind {
+                            margin: 0 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    body {
+        width: auto;
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "carrousel"
+        "shopind"
+        "shopind"
+        "footer"
+        ;
+        header{
+            grid-area: header;
+        }
+        .main_shop {
+            height: auto;
+            .shop {
+                .caja-contenedor {
+                    display: grid;
+                    grid-template-columns: repeat(2, 200px);
+                    grid-template-rows: repeat(3, 270px);
+                    justify-content: center;
+                    row-gap: 50px;
+                    height: 900px;
+                    margin-top: 20px;
+                    .caja-producto {
+                        width: 200px;
+                        height: 270px;
+                    }
+                }
+            }
+            .shop-fila {
+                margin-top: 520px;
+                .caja-contenedor {
+                    display: grid;
+                    grid-template-columns: repeat(2, 200px);
+                    grid-template-rows: repeat(3, 270px);
+                    justify-content: center;
+                    row-gap: 50px;
+                    height: 900px;
+                    margin-top: 20px;
+                    .caja-producto {
+                        width: 200px;
+                        height: 270px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        grid-area: footer;
+    }
+}
+
+

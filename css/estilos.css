@@ -8,20 +8,6 @@ body {
   background-color: #ee9551;
 }
 
-h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-.home {
-  display: grid;
-  grid-template-areas: "header" "carrousel" "shopind" "shopind" "footer";
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-}
-
-/* Header */
 header {
   grid-area: header;
   background-color: #7e6552;
@@ -34,31 +20,46 @@ header h1 {
   padding-top: 15px;
   padding-left: 15px;
 }
-header nav ul li {
-  display: inline-block;
-  padding: 5px;
-  font-family: "Roboto", sans-serif;
-  margin: 10px px 10px 5px;
-}
-header nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-family: "Roboto";
-}
 header .menu {
   background-color: #b97947;
   margin-top: 12px;
   width: 100%;
   height: 40px;
 }
-header nav ul {
+header .menu nav ul {
   height: 30px;
   text-align: center;
 }
-header nav ul li {
-  padding: 10px;
+header .menu nav ul li {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 5px 0px 5px;
+}
+header .menu nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
+footer {
+  display: flex;
+  grid-area: footer;
+  background-color: #b97947;
+  width: 100%;
+  height: 100px;
+}
+footer div h2 {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+footer .logos {
+  /* margin-left: 1170px; */
+  margin-top: 30px;
+}
+
+.home {
+  display: grid;
+  grid-template-areas: "header" "carrousel" "shopind" "shopind" "footer";
+}
 .home main {
   /* Carrousel Home */
   /* Shop Index */
@@ -116,7 +117,6 @@ header nav ul li {
   margin-left: 10%;
 }
 
-/* Pagina Shop */
 .main_shop .caja-contenedor {
   display: grid;
   grid-template-columns: repeat(6, 200px);
@@ -138,6 +138,7 @@ header nav ul li {
 }
 .main_shop .caja-producto p {
   margin: 10px 20px 10px 20px;
+  font-family: "Roboto", sans-serif;
 }
 .main_shop .shop {
   margin: 40px 70px 0px 70px;
@@ -152,39 +153,37 @@ header nav ul li {
   text-decoration: none;
 }
 
-/* Imagenes destacadas */
-.imagenesDestacadas {
+main .imagenesDestacadas {
   margin-left: 70px;
   margin-right: 70px;
   height: 1000px;
   margin-top: 40px;
 }
-.imagenesDestacadas div {
+main .imagenesDestacadas div {
   display: inline-block;
 }
-.imagenesDestacadas .cuadradoimagen {
+main .imagenesDestacadas .cuadradoimagen {
   width: 270px;
   height: 190px;
   background-color: rgb(197, 197, 197);
   margin-top: 10px;
 }
-.imagenesDestacadas .cuadradoimagen1 {
+main .imagenesDestacadas .cuadradoimagen1 {
   width: 390px;
   height: 220px;
   background-color: rgb(197, 197, 197);
 }
-.imagenesDestacadas .cuadradoimagen2 {
+main .imagenesDestacadas .cuadradoimagen2 {
   width: 400px;
   height: 299px;
   background-color: rgb(197, 197, 197);
 }
-.imagenesDestacadas .cuadradoimagen3 {
+main .imagenesDestacadas .cuadradoimagen3 {
   width: 350px;
   height: 300px;
   background-color: rgb(197, 197, 197);
 }
 
-/* Blog */
 .blog {
   margin: 40px 70px 0px 70px;
   height: 1200px;
@@ -196,12 +195,12 @@ header nav ul li {
 }
 .blog .cajainformacion p {
   font-size: larger;
+  font-family: "Roboto", sans-serif;
 }
 .blog .cajainformacion h3 {
   font-size: 3ch;
 }
 
-/* Fotografos */
 .fotografos {
   margin-left: 70px;
   margin-right: 70px;
@@ -230,33 +229,9 @@ header nav ul li {
 }
 .fotografos .caja_fotografos .bloque_blanco p {
   font-size: larger;
+  font-family: "Roboto", sans-serif;
 }
 
-/* Footer  */
-footer {
-  display: flex;
-  grid-area: footer;
-  background-color: #b97947;
-  width: 100%;
-  height: 100px;
-}
-footer div h2 {
-  margin-top: 30px;
-  margin-left: 30px;
-}
-footer .logos {
-  /* margin-left: 1170px; */
-  margin-top: 30px;
-}
-
-/* footer img{
-    margin-left: 30px;
-    margin-top: 30px;
-} */
-/* footer h2 {
-    margin-left: 30px;
-} */
-/* Media queries */
 @media (max-width: 577px) {
   .home {
     width: auto;
@@ -297,6 +272,7 @@ footer .logos {
   }
   .home main .shopind .caja-contenedor .caja-producto p {
     font-size: large;
+    font-family: "Roboto", sans-serif;
   }
   .home main .shopind .caja-contenedor .caja-producto .redireccion_ind {
     margin: 0 10px 0 0;
@@ -340,12 +316,6 @@ footer .logos {
   body .main_shop .shop-fila .caja-contenedor .caja-producto {
     width: 200px;
     height: 270px;
-  }
-  body .main_shop .shop-fila .caja-contenedor .caja-producto p {
-    margin: 2px 0px 0px 20px;
-  }
-  body .main_shop .shop-fila .caja-contenedor .caja-producto a {
-    margin: 0 10px 0 0;
   }
   footer {
     grid-area: footer;

@@ -1,0 +1,30 @@
+.fotografos {
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 850px;
+    margin-top: 20px;
+    div {
+        display: flex;
+        margin-top: 10px;
+    }
+    .caja_fotografos {
+        flex-wrap: wrap;
+        margin-left: 100px;
+        .bloque_blanco {
+            background-color: rgb(124, 95, 72);
+            flex-wrap: wrap;
+            width: 750px;
+            height: 350px;  
+            margin: 5px 5px 5px 5px;
+            padding: 10px 0px 0px 10px;
+            img {
+                width: 200px;
+                height: 190px;
+            }
+            p {
+                font-size: larger;
+                font-family: $fuente-general;
+            }
+        }
+    }   
+}
