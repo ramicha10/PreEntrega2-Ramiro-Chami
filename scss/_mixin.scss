@@ -1,0 +1,15 @@
+@mixin caja-contenedor ($display, $grid-col, $grid-row, $col-gap, $ejeX, $marg-top) {
+    display: $display;
+    grid-template-columns: $grid-col;
+    grid-template-rows: $grid-row;
+    column-gap: $col-gap;
+    justify-content: $ejeX;
+    margin-top: $marg-top;
+}
+
+@mixin caja-producto ($width, $height, $marg-bot, $back-col) {
+    width: $width;
+    height: $height;
+    margin-bottom: $marg-bot;
+    background-color: $back-col;
+}

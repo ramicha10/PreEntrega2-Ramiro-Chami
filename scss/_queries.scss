@@ -54,21 +54,13 @@
     }
 
     body {
-        width: auto;
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "carrousel"
-        "shopind"
-        "shopind"
-        "footer"
-        ;
         header{
             grid-area: header;
         }
         .main_shop {
             height: auto;
             .shop {
+                grid-area: shop-fila;
                 .caja-contenedor {
                     display: grid;
                     grid-template-columns: repeat(2, 200px);
@@ -85,6 +77,7 @@
             }
             .shop-fila {
                 margin-top: 520px;
+                grid-area: shop-fila;
                 .caja-contenedor {
                     display: grid;
                     grid-template-columns: repeat(2, 200px);

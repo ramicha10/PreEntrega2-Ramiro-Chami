@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Poppins&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +8,11 @@
 
 body {
   background-color: #ee9551;
+}
+body h2 {
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
 }
 
 header {
@@ -15,8 +22,9 @@ header {
   height: 100px;
 }
 header h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: xx-large;
+  font-weight: 800;
   padding-top: 15px;
   padding-left: 15px;
 }
@@ -30,9 +38,12 @@ header .menu nav ul {
   height: 30px;
   text-align: center;
 }
+header .menu nav ul .botones {
+  padding-left: 0;
+}
 header .menu nav ul li {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   padding: 10px 5px 0px 5px;
 }
 header .menu nav ul li a {
@@ -50,9 +61,10 @@ footer {
 footer div h2 {
   margin-top: 30px;
   margin-left: 30px;
+  color: black;
+  font-weight: 400;
 }
 footer .logos {
-  /* margin-left: 1170px; */
   margin-top: 30px;
 }
 
@@ -60,12 +72,12 @@ footer .logos {
   display: grid;
   grid-template-areas: "header" "carrousel" "shopind" "shopind" "footer";
 }
+.home header h1 {
+  color: black;
+}
 .home main {
   /* Carrousel Home */
   /* Shop Index */
-}
-.home main h2 {
-  font-family: "Roboto", sans-serif;
 }
 .home main .carouselExampleIndicators {
   width: 80%;
@@ -90,7 +102,6 @@ footer .logos {
 }
 .home main .shopind h2 {
   text-align: center;
-  font-weight: bold;
 }
 .home main .shopind .caja-contenedor {
   display: grid;
@@ -98,10 +109,12 @@ footer .logos {
   grid-template-rows: repeat(1, 350px);
   column-gap: 25px;
   justify-content: center;
+  margin-top: 10px;
 }
 .home main .shopind .caja-producto {
   width: 200px;
   height: 350px;
+  margin-bottom: 0px;
   background-color: white;
   box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
 }
@@ -111,10 +124,14 @@ footer .logos {
 }
 .home main .shopind .caja-producto p {
   margin: 10px 20px 10px 20px;
+  font-family: "Roboto";
+  font-weight: 300;
 }
-.home main .shopind .caja-producto .redireccion_ind {
-  text-decoration: none;
+.home main .shopind .caja-producto .redireccion {
   margin-left: 10%;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: rgb(27, 106, 255);
 }
 
 .main_shop .caja-contenedor {
@@ -138,7 +155,14 @@ footer .logos {
 }
 .main_shop .caja-producto p {
   margin: 10px 20px 10px 20px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
+  font-weight: 300;
+}
+.main_shop .caja-producto .redireccion {
+  margin-left: 10%;
+  font-family: "Roboto";
+  text-decoration: none;
+  color: rgb(27, 106, 255);
 }
 .main_shop .shop {
   margin: 40px 70px 0px 70px;
@@ -146,11 +170,6 @@ footer .logos {
 }
 .main_shop .shop-fila {
   margin: 0px 70px 20px 70px;
-}
-.main_shop .redireccion {
-  margin-left: 10%;
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
 }
 
 main .imagenesDestacadas {
@@ -277,16 +296,14 @@ main .imagenesDestacadas .cuadradoimagen3 {
   .home main .shopind .caja-contenedor .caja-producto .redireccion_ind {
     margin: 0 10px 0 0;
   }
-  body {
-    width: auto;
-    display: grid;
-    grid-template-areas: "header" "carrousel" "shopind" "shopind" "footer";
-  }
   body header {
     grid-area: header;
   }
   body .main_shop {
     height: auto;
+  }
+  body .main_shop .shop {
+    grid-area: shop-fila;
   }
   body .main_shop .shop .caja-contenedor {
     display: grid;
@@ -303,6 +320,7 @@ main .imagenesDestacadas .cuadradoimagen3 {
   }
   body .main_shop .shop-fila {
     margin-top: 520px;
+    grid-area: shop-fila;
   }
   body .main_shop .shop-fila .caja-contenedor {
     display: grid;

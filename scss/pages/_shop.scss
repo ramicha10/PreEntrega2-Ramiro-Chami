@@ -1,17 +1,9 @@
 .main_shop {
     .caja-contenedor {
-        display: grid;
-        grid-template-columns: repeat(6, 200px);
-        grid-template-rows: repeat(1, 350px);
-        column-gap: 25px;
-        justify-content: center;
-        margin-top: 10px;
+        @include caja-contenedor (grid, repeat(6, 200px), repeat(1, 350px), 25px, center, 10px)
     }
     .caja-producto {
-        width: 200px;
-        height: 350px;
-        margin-bottom: 20px;
-        background-color: white;
+        @include caja-producto (200px, 350px, 20px, white);
         box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
         img {
             width: 200px;
@@ -19,7 +11,14 @@
         }
         p {
             margin: 10px 20px 10px 20px;
-            font-family: $fuente-general;
+            font-family: map-get($fuentes, Secondary);
+            font-weight: 300;
+        }
+        .redireccion {
+            margin-left: 10%;
+            font-family: map-get($fuentes, Secondary);
+            text-decoration: none;
+            color: rgb(27, 106, 255);
         }
     }
         
@@ -31,9 +30,5 @@
         margin: 0px 70px 20px 70px;
     }
     
-    .redireccion {
-        margin-left: 10%;
-        font-family: $fuente-general;
-        text-decoration: none;
-    }
+    
 }
