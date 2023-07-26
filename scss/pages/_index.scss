@@ -11,28 +11,29 @@
         h1 {
             color: black;
         }
+        .menu {
+            .botones {
+                padding-left: 0;
+            }
+        }
     }
     main{
         /* Carrousel Home */
-        .carouselExampleIndicators {
-            width: 80%;
-            height: 400px;
-            margin: 5px 10% 20px 0;    
-        }
-        .carousel-item {
-            img {
-                height: 650px;
-                width: 80%;
-            }
-        }
+        
         #carouselExampleIndicators {
             grid-area: carrousel;
             width: 70%;
-            margin-left: 15%;
+            margin-top: 20px;
             margin-bottom: 20px;
-        }
-        .carousel-inner {
-            margin-top: 5px;
+            .carousel-inner {
+                margin-top: 5px;
+                .carousel-item {
+                    img {
+                        height: 650px;
+                        width: 80%;
+                    }
+                }
+            }
         }
         /* Shop Index */
         .shopind {
@@ -42,26 +43,26 @@
                 // font-weight: bold;
             }
             .caja-contenedor {
-                @include caja-contenedor (grid, repeat(6, 200px), repeat(1, 350px), 25px, center, 10px)
-            }   
-            .caja-producto {
-                @include caja-producto (200px, 350px, 0px, white);
-                box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
-                img {
-                    width: 200px;
-                    height: unset;
-                }
-                p {
-                    margin: 10px 20px 10px 20px;
-                    font-family: map-get($fuentes, Secondary);
-                    font-weight: 300;
-                }
-                .redireccion {
-                    margin-left: 10%;
-                    font-family: map-get($fuentes, Secondary);
-                    text-decoration: none;
-                    color: rgb(27, 106, 255);
-                }
+                @include caja-contenedor (grid, repeat(6, 200px), repeat(1, 350px), 25px, center, 10px);
+                .caja-producto {
+                    @include caja-producto (200px, 350px, 0px, white);
+                    box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
+                    img {
+                        width: 200px;
+                        height: unset;
+                    }
+                    p {
+                        margin: 10px 20px 10px 20px;
+                        font-family: map-get($fuentes, Secondary);
+                        font-weight: 300;
+                    }
+                    .redireccion {
+                        margin-left: 10%;
+                        font-family: map-get($fuentes, Secondary);
+                        text-decoration: none;
+                        color: rgb(27, 106, 255);
+                    }
+                }   
             }
         }
     }
