@@ -163,11 +163,10 @@ footer .logos {
   color: rgb(27, 106, 255);
 }
 .main_shop .shop {
-  margin: 40px 70px 0px 70px;
-  height: 450px;
+  margin: 20px 70px 0px 70px;
 }
 .main_shop .shop-fila {
-  margin: 0px 70px 20px 70px;
+  margin: 30px 70px 20px 70px;
 }
 
 main .imagenesDestacadas h2 {
@@ -358,7 +357,7 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   .home main .shopind .caja-contenedor {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(6, 460px);
+    grid-template-rows: repeat(6, 450px);
     justify-content: center;
     margin-top: 10px;
     row-gap: 15px;
@@ -489,39 +488,41 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   }
   body .main_shop {
     height: auto;
+    margin-bottom: 40px;
   }
   body .main_shop .shop {
     grid-area: shop-fila;
   }
   body .main_shop .shop .caja-contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, 270px);
     justify-content: center;
     row-gap: 50px;
     height: 900px;
     margin-top: 20px;
+    column-gap: 10px;
   }
   body .main_shop .shop .caja-contenedor .caja-producto {
-    width: 200px;
-    height: 270px;
+    width: 190px;
+    height: 280px;
   }
   body .main_shop .shop-fila {
-    margin-top: 520px;
     grid-area: shop-fila;
   }
   body .main_shop .shop-fila .caja-contenedor {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, 270px);
     justify-content: center;
     row-gap: 50px;
     height: 900px;
     margin-top: 20px;
+    column-gap: 10px;
   }
   body .main_shop .shop-fila .caja-contenedor .caja-producto {
-    width: 200px;
-    height: 270px;
+    width: 190px;
+    height: 280px;
   }
   footer {
     grid-area: footer;
