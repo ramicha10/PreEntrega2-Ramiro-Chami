@@ -163,10 +163,10 @@ footer .logos {
   color: rgb(27, 106, 255);
 }
 .main_shop .shop {
-  margin: 20px 70px 0px 70px;
+  margin-top: 20px;
 }
 .main_shop .shop-fila {
-  margin: 30px 70px 20px 70px;
+  margin-top: 20px;
 }
 
 main .imagenesDestacadas h2 {
