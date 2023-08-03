@@ -1,4 +1,4 @@
-@media (max-width: 577px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     .home {
         width: auto;
@@ -12,8 +12,10 @@
         ;
         header{
             grid-area: header;
+            width: 100%;
         }
         main {
+            width: 100%;
             #carouselExampleIndicators {
                 grid-area: carrousel;
                 width: 100%;
@@ -25,20 +27,20 @@
                 height: auto;
                 .caja-contenedor {
                     display: grid;
-                    grid-template-columns: repeat(1, 400px);
+                    grid-template-columns: repeat(1, auto);
                     grid-template-rows: repeat(6, 460px);   
                     justify-content: center;
                     margin-top: 10px;
                     row-gap: 15px;
                     .caja-producto {
-                        width: 400px;
-                        height: 460px;
+                        width: 350px;
+                        height: 420px;
                         margin-bottom: 20px;
                         background-color: white;
                         box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
                         text-align: center;
                         img {
-                            width: 400px;
+                            width: 100%;
                         }
                         p {
                             font-size: large;
@@ -215,6 +217,7 @@
 
     footer {
         grid-area: footer;
+        width: 100%;
     }
 }
 

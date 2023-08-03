@@ -332,7 +332,7 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   font-family: "Roboto", sans-serif;
 }
 
-@media (max-width: 577px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .home {
     width: auto;
     display: grid;
@@ -340,6 +340,10 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   }
   .home header {
     grid-area: header;
+    width: 100%;
+  }
+  .home main {
+    width: 100%;
   }
   .home main #carouselExampleIndicators {
     grid-area: carrousel;
@@ -353,22 +357,22 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   }
   .home main .shopind .caja-contenedor {
     display: grid;
-    grid-template-columns: repeat(1, 400px);
+    grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(6, 460px);
     justify-content: center;
     margin-top: 10px;
     row-gap: 15px;
   }
   .home main .shopind .caja-contenedor .caja-producto {
-    width: 400px;
-    height: 460px;
+    width: 350px;
+    height: 420px;
     margin-bottom: 20px;
     background-color: white;
     box-shadow: 5px 5px 8px rgba(88, 88, 88, 0.3);
     text-align: center;
   }
   .home main .shopind .caja-contenedor .caja-producto img {
-    width: 400px;
+    width: 100%;
   }
   .home main .shopind .caja-contenedor .caja-producto p {
     font-size: large;
@@ -521,6 +525,7 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   }
   footer {
     grid-area: footer;
+    width: 100%;
   }
 }
 
