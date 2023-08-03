@@ -188,12 +188,22 @@
                     grid-template-rows: repeat(3, 270px);
                     justify-content: center;
                     row-gap: 50px;
-                    height: 900px;
+                    height: auto;
                     margin-top: 20px;
                     column-gap: 10px;
                     .caja-producto {
-                        width: 190px;
+                        width: 170px;
                         height: 280px;
+                        img {
+                            width: 100%;
+                        }
+                        p {
+                            font-size: large;
+                            font-family: $fuente-general;
+                        }
+                        .redireccion_ind {
+                            margin: 0 10px 0 0;
+                        }
                     }
                 }
             }
@@ -205,12 +215,22 @@
                     grid-template-rows: repeat(3, 270px);
                     justify-content: center;
                     row-gap: 50px;
-                    height: 900px;
+                    height: auto;
                     margin-top: 20px;
                     column-gap: 10px;
                     .caja-producto {
-                        width: 190px;
+                        width: 170px;
                         height: 280px;
+                        img {
+                            width: 100%;
+                        }
+                        p {
+                            font-size: large;
+                            font-family: $fuente-general;
+                        }
+                        .redireccion_ind {
+                            margin: 0 10px 0 0;
+                        }
                     }
                 }
             }
