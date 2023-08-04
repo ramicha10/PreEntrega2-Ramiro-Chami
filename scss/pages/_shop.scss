@@ -1,4 +1,5 @@
 .main_shop {
+    margin-bottom: 20px;
     .caja-contenedor {
         @include caja-contenedor (grid, repeat(6, 200px), repeat(1, 350px), 25px, center, 10px)
     }

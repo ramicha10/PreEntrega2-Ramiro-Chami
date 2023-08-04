@@ -1,5 +1,6 @@
 main {
     .imagenesDestacadas {
+        margin-bottom: 20px;
         h2{
             padding: 20px 0;
         }
@@ -17,8 +18,7 @@ main {
             column-gap: 5px;
             row-gap: 5px;
             justify-content: center;
-            margin-left: 10%;
-            margin-right: 10%;
+            margin: 0% 10%;
             .img1 {
                 grid-area: img1;
                 img {

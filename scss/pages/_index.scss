@@ -18,8 +18,9 @@
         }
     }
     main{
-        /* Carrousel Home */
+        margin-bottom: 20px;
         
+        /* Carrousel Home */
         #carouselExampleIndicators {
             grid-area: carrousel;
             width: 70%;
@@ -37,7 +38,6 @@
         }
         /* Shop Index */
         .shopind {
-            margin-bottom: 20px;
             h2 {
                 text-align: center;
                 // font-weight: bold;

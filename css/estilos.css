@@ -79,6 +79,7 @@ footer .logos {
   padding-left: 0;
 }
 .home main {
+  margin-bottom: 20px;
   /* Carrousel Home */
   /* Shop Index */
 }
@@ -94,9 +95,6 @@ footer .logos {
 .home main #carouselExampleIndicators .carousel-inner .carousel-item img {
   height: 650px;
   width: 80%;
-}
-.home main .shopind {
-  margin-bottom: 20px;
 }
 .home main .shopind h2 {
   text-align: center;
@@ -132,6 +130,9 @@ footer .logos {
   color: rgb(27, 106, 255);
 }
 
+.main_shop {
+  margin-bottom: 20px;
+}
 .main_shop .caja-contenedor {
   display: grid;
   grid-template-columns: repeat(6, 200px);
@@ -169,6 +170,9 @@ footer .logos {
   margin-top: 20px;
 }
 
+main .imagenesDestacadas {
+  margin-bottom: 20px;
+}
 main .imagenesDestacadas h2 {
   padding: 20px 0;
 }
@@ -180,8 +184,7 @@ main .imagenesDestacadas .contenedor_img {
   column-gap: 5px;
   row-gap: 5px;
   justify-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0% 10%;
 }
 main .imagenesDestacadas .contenedor_img .img1 {
   grid-area: img1;
@@ -300,35 +303,54 @@ main .imagenesDestacadas .contenedor_img .img13 img {
 }
 
 .fotografos {
-  margin-left: 70px;
-  margin-right: 70px;
-  height: 850px;
-  margin-top: 20px;
-}
-.fotografos .caja_fotografos {
   display: flex;
-  margin-top: 10px;
-  flex-wrap: wrap;
-  margin-left: 100px;
-}
-.fotografos .caja_fotografos .bloque_blanco {
-  background-color: rgb(124, 95, 72);
   flex-direction: column;
+  align-items: center;
+  margin: 20px 70px;
+  height: auto;
+}
+.fotografos .caja_fotografos .tarjeta {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(124, 95, 72);
   width: 750px;
-  height: 350px;
-  margin: 5px 5px 5px 5px;
-  padding: 10px 0px 0px 10px;
+  height: 300px;
+  margin: 15px 0px 5px 0px;
+  padding: 10px 10px 0px 10px;
 }
-.fotografos .caja_fotografos .bloque_blanco img {
-  width: 160px;
+.fotografos .caja_fotografos .tarjeta h3 {
+  font-family: "Roboto";
+  font-size: large;
+}
+.fotografos .caja_fotografos .tarjeta div {
+  display: flex;
+}
+.fotografos .caja_fotografos .tarjeta div img {
+  width: 180px;
   height: 180px;
+  padding: 5px;
 }
-.fotografos .caja_fotografos .bloque_blanco h3 {
+.fotografos .caja_fotografos .tarjeta div p {
+  font-size: medium;
   font-family: "Roboto";
 }
-.fotografos .caja_fotografos .bloque_blanco p {
-  font-size: medium;
-  font-family: "Roboto", sans-serif;
+.fotografos .caja_fotografos .tarjeta .botones {
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
+.fotografos .caja_fotografos .tarjeta .botones a {
+  background-color: #945610;
+  width: 200px;
+  margin: 5px 0px 0px 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  font-family: "Lato";
+  font-size: large;
+  font-weight: bold;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -386,12 +408,66 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   body main {
     width: 100%;
   }
+  body main .fotografos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 70px;
+    height: auto;
+  }
+  body main .fotografos .caja_fotografos .tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(124, 95, 72);
+    width: 310px;
+    height: 500px;
+    margin: 15px 0px 5px 0px;
+    padding: 10px 10px 0px 10px;
+  }
+  body main .fotografos .caja_fotografos .tarjeta h3 {
+    font-family: "Roboto";
+    font-size: large;
+    text-align: center;
+  }
+  body main .fotografos .caja_fotografos .tarjeta div {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .fotografos .caja_fotografos .tarjeta div img {
+    width: 200px;
+    height: 180px;
+    padding: 5px;
+  }
+  body main .fotografos .caja_fotografos .tarjeta div p {
+    font-size: small;
+    font-family: "Roboto";
+    padding: 5px 10px 0px 10px;
+  }
+  body main .fotografos .caja_fotografos .tarjeta .botones {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0px;
+  }
+  body main .fotografos .caja_fotografos .tarjeta .botones a {
+    background-color: #945610;
+    width: 280px;
+    margin: 5px 0px 0px 5px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-family: "Lato";
+    font-size: large;
+    font-weight: bold;
+  }
   body main .imagenesDestacadas .contenedor_img {
     height: auto;
     display: grid;
-    grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(13, 400px);
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "img12" "img13";
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(13, 350px);
+    grid-template-areas: "img3" "img2" "img9" "img4" "img5" "img6" "img7" "img8" "img1" "img10" "img11" "img12" "img13";
     justify-content: center;
     margin-bottom: 10px;
   }
@@ -399,92 +475,92 @@ main .imagenesDestacadas .contenedor_img .img13 img {
     grid-area: img1;
   }
   body main .imagenesDestacadas .contenedor_img .img1 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img2 {
     grid-area: img2;
   }
   body main .imagenesDestacadas .contenedor_img .img2 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img3 {
     grid-area: img3;
   }
   body main .imagenesDestacadas .contenedor_img .img3 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img4 {
     grid-area: img4;
   }
   body main .imagenesDestacadas .contenedor_img .img4 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img5 {
     grid-area: img5;
   }
   body main .imagenesDestacadas .contenedor_img .img5 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img6 {
     grid-area: img6;
   }
   body main .imagenesDestacadas .contenedor_img .img6 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img7 {
     grid-area: img7;
   }
   body main .imagenesDestacadas .contenedor_img .img7 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img8 {
     grid-area: img8;
   }
   body main .imagenesDestacadas .contenedor_img .img8 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img9 {
     grid-area: img9;
   }
   body main .imagenesDestacadas .contenedor_img .img9 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img10 {
     grid-area: img10;
   }
   body main .imagenesDestacadas .contenedor_img .img10 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img11 {
     grid-area: img11;
   }
   body main .imagenesDestacadas .contenedor_img .img11 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img12 {
     grid-area: img12;
   }
   body main .imagenesDestacadas .contenedor_img .img12 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body main .imagenesDestacadas .contenedor_img .img13 {
     grid-area: img13;
   }
   body main .imagenesDestacadas .contenedor_img .img13 img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 350px;
   }
   body .main_shop {
     height: auto;
