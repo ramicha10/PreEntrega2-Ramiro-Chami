@@ -8,7 +8,8 @@
         .tarjeta {
             display: flex;
             flex-direction: column;
-            background-color: rgb(124, 95, 72);
+            background-color: beige;
+            border-radius: 10px;
             width: 750px;
             height: 300px;  
             margin: 15px 0px 5px 0px;
@@ -25,27 +26,31 @@
                     padding: 5px;
                 }
                 p {
-                    font-size: medium;
+                    font-size: large;
                     font-family: map-get($fuentes, Secondary);
+                    margin-top: 5px;
                 }
             }
             .botones {
                 justify-content: center;
                 align-content: center;
                 margin-top: 10px;
-                a {
-                    background-color: #fabb8796;
-                    width: 200px;
-                    margin: 5px 0px 0px 5px;
-                    padding: 5px;
-                    border-radius: 5px;
-                    color: rgb(0, 0, 0);
-                    text-decoration: none;
-                    text-align: center;
-                    font-family: map-get($fuentes, Primary);
-                    font-size: large;
-                    font-weight: bold;
-                }
+            }
+            a {
+                background-color: #fabb8796;
+                width: 200px;
+                margin: 5px 0px 0px 5px;
+                padding: 5px;
+                border-radius: 5px;
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                text-align: center;
+                font-family: map-get($fuentes, Primary);
+                font-size: large;
+                font-weight: bold;
+                &:hover {
+                    background-color: #63371496;
+            }
             }
         }
     }   
