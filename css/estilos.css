@@ -281,25 +281,44 @@ main .imagenesDestacadas .contenedor_img .img13 img {
 .blog {
   display: flex;
   flex-direction: column;
-  margin: 40px 0px;
+  margin: 20px 0px;
   height: unset;
   align-items: center;
+}
+.blog h2 {
+  font-weight: bold;
 }
 .blog .caja-informacion {
   background-color: beige;
   width: 1000px;
   height: 350px;
   margin: 30px 0px 0px 0px;
+  border-radius: 10px;
 }
 .blog .caja-informacion h3 {
-  font-size: 3.5ch;
+  font-size: x-large;
   font-family: "Roboto";
   padding: 10px 10px 0px 10px;
+  margin-left: 10px;
 }
-.blog .caja-informacion p {
-  font-size: x-large;
+.blog .caja-informacion div {
+  display: flex;
+}
+.blog .caja-informacion div p {
+  font-size: large;
   font-family: "Poppins";
   padding: 10px 10px 0px 10px;
+  margin-left: 10px;
+}
+.blog .caja-informacion div img {
+  width: 400px;
+  height: auto;
+  margin: 10px 10px 0px 0px;
+}
+.blog .caja-informacion p {
+  margin-left: 20px;
+  font-family: "Poppins";
+  font-size: small;
 }
 
 .fotografos {
@@ -340,7 +359,7 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   margin-top: 10px;
 }
 .fotografos .caja_fotografos .tarjeta .botones a {
-  background-color: #945610;
+  background-color: rgba(250, 187, 135, 0.5882352941);
   width: 200px;
   margin: 5px 0px 0px 5px;
   padding: 5px;
@@ -372,6 +391,13 @@ main .imagenesDestacadas .contenedor_img .img13 img {
     height: unset;
     margin: 0 0 10px 0;
   }
+  .home main #carouselExampleIndicators .carousel-inner {
+    margin-top: 5px;
+  }
+  .home main #carouselExampleIndicators .carousel-inner .carousel-item img {
+    height: 330px;
+    width: 80%;
+  }
   .home main .shopind {
     grid-area: shopind;
     height: auto;
@@ -385,7 +411,7 @@ main .imagenesDestacadas .contenedor_img .img13 img {
     row-gap: 15px;
   }
   .home main .shopind .caja-contenedor .caja-producto {
-    width: 350px;
+    width: 300px;
     height: 420px;
     margin-bottom: 20px;
     background-color: white;
@@ -399,14 +425,36 @@ main .imagenesDestacadas .contenedor_img .img13 img {
     font-size: large;
     font-family: "Roboto", sans-serif;
   }
-  .home main .shopind .caja-contenedor .caja-producto .redireccion_ind {
-    margin: 0 10px 0 0;
+  .home main .shopind .caja-contenedor .caja-producto .redireccion {
+    margin-left: 0%;
   }
   body header {
     grid-area: header;
   }
   body main {
     width: 100%;
+  }
+  body main .blog .caja-informacion {
+    width: 90%;
+    height: auto;
+  }
+  body main .blog .caja-informacion h3 {
+    font-size: large;
+  }
+  body main .blog .caja-informacion div {
+    flex-direction: column;
+    align-items: center;
+  }
+  body main .blog .caja-informacion div p {
+    font-size: medium;
+    padding: 0px 10px;
+  }
+  body main .blog .caja-informacion div img {
+    width: 80%;
+    height: 100%;
+  }
+  body main .blog .caja-informacion p {
+    padding: 5px 0px;
   }
   body main .fotografos {
     display: flex;
@@ -418,7 +466,8 @@ main .imagenesDestacadas .contenedor_img .img13 img {
   body main .fotografos .caja_fotografos .tarjeta {
     display: flex;
     flex-direction: column;
-    background-color: rgb(124, 95, 72);
+    background-color: beige;
+    border-radius: 10px;
     width: 310px;
     height: 500px;
     margin: 15px 0px 5px 0px;
@@ -450,7 +499,7 @@ main .imagenesDestacadas .contenedor_img .img13 img {
     margin-top: 0px;
   }
   body main .fotografos .caja_fotografos .tarjeta .botones a {
-    background-color: #945610;
+    background-color: rgba(250, 187, 135, 0.5882352941);
     width: 280px;
     margin: 5px 0px 0px 5px;
     padding: 2px 10px;

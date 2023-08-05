@@ -21,6 +21,15 @@
                 width: 100%;
                 height: unset;
                 margin: 0 0 10px 0;
+                .carousel-inner {
+                    margin-top: 5px;
+                    .carousel-item {
+                        img {
+                            height: 330px;
+                            width: 80%;
+                        }
+                    }
+                }
             }
             .shopind {
                 grid-area: shopind;
@@ -33,7 +42,7 @@
                     margin-top: 10px;
                     row-gap: 15px;
                     .caja-producto {
-                        width: 350px;
+                        width: 300px;
                         height: 420px;
                         margin-bottom: 20px;
                         background-color: white;
@@ -46,8 +55,8 @@
                             font-size: large;
                             font-family: $fuente-general;
                         }
-                        .redireccion_ind {
-                            margin: 0 10px 0 0;
+                        .redireccion {
+                            margin-left: 0%;
                         }
                     }
                 }
@@ -61,6 +70,30 @@
         }
         main {
             width: 100%;
+            .blog {
+                .caja-informacion {
+                    width: 90%;
+                    height: auto;
+                    h3 {
+                        font-size: large;
+                    }
+                    div {
+                        flex-direction: column;
+                        align-items: center;
+                        p {
+                            font-size: medium;
+                            padding: 0px 10px;
+                        }
+                        img {
+                            width: 80%;
+                            height: 100%;
+                        }
+                    }
+                    p {
+                        padding: 5px 0px;
+                    }
+                }
+            }
             .fotografos {
                 display: flex;
                 flex-direction: column;
@@ -71,7 +104,8 @@
                     .tarjeta {
                         display: flex;
                         flex-direction: column;
-                        background-color: rgb(124, 95, 72);
+                        background-color: beige;
+                        border-radius: 10px;
                         width: 310px;
                         height: 500px;  
                         margin: 15px 0px 5px 0px;
@@ -101,7 +135,7 @@
                             align-content: center;
                             margin-top: 0px;
                             a {
-                                background-color: #945610;
+                                background-color: #fabb8796;
                                 width: 280px;
                                 margin: 5px 0px 0px 5px;
                                 padding: 2px 10px;

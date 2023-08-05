@@ -1,23 +1,42 @@
 .blog {
     display: flex;
     flex-direction: column;
-    margin: 40px 0px;
+    margin: 20px 0px;
     height: unset;
     align-items: center;
+    h2 {
+        font-weight: bold;
+    }
     .caja-informacion {
         background-color: beige;
         width: 1000px;
         height: 350px;
         margin: 30px 0px 0px 0px;
+        border-radius: 10px;
         h3 {
-            font-size: 3.5ch;
+            font-size: x-large;
             font-family: map-get($fuentes, Secondary);
-            padding: 10px 10px 0px 10px;    
+            padding: 10px 10px 0px 10px;  
+            margin-left: 10px;
+        }
+        div {
+            display: flex;
+            p {
+                font-size: large;
+                font-family: map-get($fuentes, Tertiary);
+                padding: 10px 10px 0px 10px;
+                margin-left: 10px;
+            }
+            img {
+                width: 400px;
+                height: auto;
+                margin: 10px 10px 0px 0px;
+            }
         }
         p {
-            font-size: x-large;
+            margin-left: 20px;
             font-family: map-get($fuentes, Tertiary);
-            padding: 10px 10px 0px 10px;
+            font-size: small;
         }
     }
 }
